@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Global styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+      }
+      /* Header styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      /* Content styles */
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 50px;
+      }
+      .content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .content ul {
+        font-size: 18px;
+      }
+      .content ul li {
+        margin-bottom: 10px;
+      }
+      .content code {
+        background-color: #f5f5f5;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+
+   
+   
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Page not found (404)</h1>
+      <h2 style="font-family: monospace;">Django Internship Assignment by Shad Abdullah.</h2>
+    </header>
+    <div class="content">
+        
+        <p style="font-family: monospace;">Here are some examples of how to use the API:</p>
+        <ul style="font-family: monospace;">
+            <li>Get all works: <code>http://127.0.0.1:8000/api/works</code></li>
+            <li>Get works by artist: <code>http://127.0.0.1:8000/api/works?artist=[Artist Name]</code></li>
+            <li>Get works by work type or YouTube ID: <code>http://127.0.0.1:8000/api/works?work_type=Youtube or pk of YouTube</code></li>
+            <li>Register a new user: send a POST request to <code>http://127.0.0.1:8000/api/register</code> with the username and password in the request body.</li>
+        </ul>
+        
+    </div>
+  </body>
+</html>
