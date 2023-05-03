@@ -15,8 +15,9 @@ urlpatterns = [
     path('api/register/', UserRegistration.as_view(), name='register'),
     path('api/', include(router.urls)),
     
+    
 ]
-handler404 = "apis.views.error_404_view"
+
 
 
 

@@ -4,8 +4,12 @@ from .serializers import ClientSerializer, ArtistSerializer, WorkSerializer , Us
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from django.http import HttpResponse
+from django.template import loader
 
-
+def home_view(request):
+  template = loader.get_template('main.html')
+  return HttpResponse(template.render())
     
 
 class WorkListView(viewsets.ModelViewSet):
@@ -47,7 +51,4 @@ class UserRegistration(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-from django.shortcuts import render
 
-def error_404_view(request, exception):
-    return render(request, '404.html', {})
