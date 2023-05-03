@@ -30,9 +30,7 @@ Register a New User
 
 4. To register a new user, make a POST request to /api/register with the username and password in the request body. For example:
 
-http
-
-POST /api/register
+http POST /api/register
 {
   "username": "testuser",
   "password": "123123"
